@@ -1,0 +1,19 @@
+
+.logo-dp{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+.zero{
+    height:150px;
+    width: 150px;
+    margin:25px auto;
+}
+
+.intro{
+    text-align: center;
+}

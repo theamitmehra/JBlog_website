@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- <p class="navbar-brand">DAILY JOURNAL</p> -->
+        <!-- <img src="img/logo.svg" alt="" width="35px">
+        <span class="logo-name">JBlog</span> -->
+        <div style="display: flex; gap: 5px; margin-left: 10px;">
+          <img  src="img/logo.svg" alt="" width="35px">
+          <div class="etc" >
+            <p class="logo-name" style="display: inline-block; margin-top:10px ; font-size: 20px;">JBlog</p>
+          </div>
+        </div>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/home">Home</a></li>
+          <li id="about"><a href="/compose">Compose Post</a></li>
+          <li id="contact"><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+  </nav>
+
+
+
+  <body>
+
+    <div class="container">
+
+      <h1>Home</h1>
+      <p>Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing </p>
+
+      <%  for (let index = 0; index < dummy.length; index++) { %>
+        <h1><%= dummy[index].title %></h1>
+        <p><%=  dummy[index].content %></p>
+        <% } %>
+    </div>
+
+    <div class="footer-padding" ></div>
+        <div class="footer">
+            <p>Made with ❤️ by Amit mehra</p>
+        </div>
+    </div>
+</body>
+</html>

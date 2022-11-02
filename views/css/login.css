@@ -1,0 +1,142 @@
+body{
+    margin: 0;padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#f8f5fa;
+
+}
+
+.container{
+    display: flex;
+}
+
+img{
+    width: 30px;
+}
+
+.login{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    width: 150px;
+    margin: auto;
+    gap: 5px;
+}
+
+.logo>p{
+    font-size: 1.8rem;
+}
+
+.login{
+    width: 300px;
+    margin: auto;
+    gap: 15px;
+}
+
+.btn{
+    /* color: #7049E2; */
+    /* color: white;
+    padding: 0 5px; */
+    padding: 5px 10px; 
+    border-radius: 8px;
+    border: none;
+    background-color: #7049E2;
+}
+
+.context{
+    padding: 2px;
+}
+
+.logs{
+    text-decoration: none;
+    color: white;
+}
+
+.text{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+.form{
+    width: 70%;
+    margin: auto;  
+
+}
+
+input[type= text], input[type= email], input[type= password]{
+    width: 90%;
+    padding: 10px 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form > .btn, .login>btn{
+    background-color: #7049E2;
+    color: #fff;
+    width: 90%;
+    margin: 15px 5px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero{
+    width: 60vw;
+    padding: 50px 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px grey;
+}
+
+.btn:hover{
+    background-color: #7e64cd;
+    cursor: pointer;
+}
+
+@media (max-width:846px) {
+    
+    .container{
+        display:inline;
+    }
+
+}
+
+
+@media (max-width:650px) {
+
+    .hero{
+        width: 80%;
+        padding: px;
+    }
+
+    
+}
+
+/* mobile */
+@media (max-width:370px) {
+    
+    .login{
+        font-size:small;
+        padding: 0px;
+        width: max-content;
+        margin: auto;
+    }
+
+    .logs {
+        font-size: small;
+    }
+
+    .hero{
+        width: 80vw;
+        padding: 20px 0px;
+    }
+
+    .form> .btn{
+        padding: 10px;
+    }
+
+}
