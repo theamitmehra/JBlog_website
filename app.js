@@ -85,9 +85,9 @@ app.post("/register", function(req, res){
 
 /** LOGIN ROUTES **/
 app.get("/login", function (req, res) {
+
     if(req.session.userID){
         res.redirect("home");
-        
     }
     else{
         res.render("login");

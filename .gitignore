@@ -1,2 +1,5 @@
 # dotenv environment variables file
 .env
+
+./project report
+./project report/major_project_report.pdf
