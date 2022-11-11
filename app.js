@@ -155,6 +155,26 @@ app.get("/compose", function (req, res){
 
 });
 
+app.get("/feed", function (req, res){
+
+    if(req.session.userID){
+        connection.query(`select * from blogs`, function(err, result){
+            if(err) console.log(err);
+            else {
+                    res.render("feed", {
+                        dummy:result
+                    });
+            }
+        });
+    }
+    else{
+        res.statusCode = 404;
+        console.log("cannot find login page please check.");
+        res.redirect("login");
+    }
+
+});
+
 app.post("/compose", function(req, res){
 
     let title = req.body.title;

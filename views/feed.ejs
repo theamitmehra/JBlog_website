@@ -33,11 +33,11 @@
 
     <div class="container">
 
-      <h1>Home</h1>
+      <h1>Feed</h1>
       <p style="font-size: 1.7rem;">This is a Journal blog website. It enables its users to save their journals and maintain them on cloud. This site is very safe and secure. With this site you have been provided with a tool by which you can create and access all your blogs from anywhere in the Globe.</p>
 
       <%  for (let index = 0; index < dummy.length; index++) { %>
-        <h1><%= dummy[index].title %></h1>
+        <div style="display: flex;"><h2><%= dummy[index].title  %></h2> <h4 style="font-size: 15px; padding: 20px 0px 16px 5px;">(<%= dummy[index].email %>) </h4></div>
         <p><%=  dummy[index].content %></p>
         <% } %>
     </div>
